@@ -2,6 +2,7 @@ import "./styles.css";
 import userService from "./services/users";
 import { useState, useEffect } from "react";
 import User from "./components/User";
+import UserList from "./components/UserList";
 import UserForm from "./components/UserForm";
 /**
  *
@@ -90,7 +91,7 @@ export default function App() {
   return (
     <div className="App">
       {!showUsers && <UserForm createUser={addUser} cancel={toggleUserForm} />}
-      {showUsers && showUserList()}
+      {showUsers && <UserList users={users} addUser={toggleUserForm} remove={removeUser} />}
     </div>
   );
 }
