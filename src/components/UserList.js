@@ -1,23 +1,20 @@
-const UserList = ({ user, remove }) => {
-  const removeUser = async (event) => {
-    event.preventDefault();
-    console.log("remove user", user.name);
-    if (window.confirm("remove " + user.name + " ?")) {
-      await remove(user);
-    }
-  };
+import User from "./User";
 
-  console.log(user);
+const UserList = ({ users, remove, addUser }) => {
+  console.log(users);
   return (
-    <tr>
-      <td>{user.username}</td>
-      <td>{user.name}</td>
-      <td>{user.phone}</td>
-      <td>{user.email}</td>
-      <td>
-        <button onClick={removeUser}>remove</button>
-      </td>
-    </tr>
+    <div>
+      <h2>users</h2>
+      <div>
+        <button onClick={addUser}>add new user</button>
+        <p />
+      </div>
+      <table id="user-table">
+        {users.map((user) => (
+          <User key={user.id} user={user} remove={remove} />
+        ))}
+      </table>
+    </div>
   );
 };
 
