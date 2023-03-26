@@ -3,7 +3,34 @@
   text-align: center;
 }
 
-#user-table {
+.user-table {
   width: 100%;
   text-align: left;
+}
+
+@media screen and (max-width: 1045px) and (min-width: 835px) {
+  .priority-4 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 565px) and (min-width: 300px) {
+  .priority-4 {
+    display: none;
+  }
+  .priority-3 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .priority-4 {
+    display: none;
+  }
+  .priority-3 {
+    display: none;
+  }
+  .priority-2 {
+    display: none;
+  }
 }
