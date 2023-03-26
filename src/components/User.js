@@ -10,12 +10,14 @@ const User = ({ user, remove }) => {
   console.log(user);
   return (
     <tr>
-      <td>{user.username}</td>
-      <td>{user.name}</td>
-      <td>{user.phone}</td>
-      <td>{user.email}</td>
+      <td className="priority-1">{user.username}</td>
+      <td className="priority-1">{user.name}</td>
+      <td className="priority-2">{user.phone}</td>
+      <td className="priority-3">{user.email}</td>
       <td>
-        <button onClick={removeUser}>remove</button>
+        <button className="priority-1" onClick={removeUser}>
+          remove
+        </button>
       </td>
     </tr>
   );
