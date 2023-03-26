@@ -91,7 +91,13 @@ export default function App() {
   return (
     <div className="App">
       {!showUsers && <UserForm createUser={addUser} cancel={toggleUserForm} />}
-      {showUsers && <UserList users={users} addUser={toggleUserForm} remove={removeUser} />}
+      {showUsers && (
+        <UserList
+          users={users}
+          removeUser={removeUser}
+          addUser={toggleUserForm}
+        />
+      )}
     </div>
   );
 }
