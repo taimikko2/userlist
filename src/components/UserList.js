@@ -1,7 +1,6 @@
 import User from "./User";
 
-const UserList = ({ users, remove, addUser }) => {
-  console.log(users);
+const UserList = ({ users, removeUser, addUser }) => {
   return (
     <div>
       <h2>users</h2>
@@ -9,9 +8,9 @@ const UserList = ({ users, remove, addUser }) => {
         <button onClick={addUser}>add new user</button>
         <p />
       </div>
-      <table id="user-table">
+      <table className="user-table">
         {users.map((user) => (
-          <User key={user.id} user={user} remove={remove} />
+          <User key={user.id} user={user} remove={removeUser} />
         ))}
       </table>
     </div>
