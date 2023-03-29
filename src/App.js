@@ -27,7 +27,7 @@ import UserForm from "./components/UserForm";
  * Huom! Käyttäjät haetaan rajapinnasta, mutta sen lisäksi ei ole tarvetta tehdä api kutsuja
  *
  * Kun olet tehnyt tehtävän, palauta linkki siihen sähköpostilla osoitteeseen:
- * juha.hietapelto@codemen.fi. Linkin saa oikeasta yläkulmasta (Share->Copy Sandbox link)
+ * Linkin saa oikeasta yläkulmasta (Share->Copy Sandbox link)
  *
  */
 
