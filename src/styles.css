@@ -3,18 +3,48 @@
   text-align: center;
 }
 
+.add-button {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
 .user-table {
   width: 100%;
   text-align: left;
 }
 
+.add-label {
+  display: inline-block;
+  width: 100px;
+  /*width: 20%; */
+  text-align: right;
+}
+
+.add-user {
+  width: 60%;
+  text-align: left;
+  margin-left: 10px;
+}
+
 @media screen and (max-width: 1045px) and (min-width: 835px) {
+  .priority-5 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 835px) and (min-width: 565px) {
+  .priority-5 {
+    display: none;
+  }
   .priority-4 {
     display: none;
   }
 }
 
 @media screen and (max-width: 565px) and (min-width: 300px) {
+  .priority-5 {
+    display: none;
+  }
   .priority-4 {
     display: none;
   }
@@ -24,6 +54,9 @@
 }
 
 @media screen and (max-width: 300px) {
+  .priority-5 {
+    display: none;
+  }
   .priority-4 {
     display: none;
   }
